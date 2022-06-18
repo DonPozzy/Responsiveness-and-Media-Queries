@@ -1,0 +1,154 @@
+*{
+    padding: 0; margin: 0; box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: rgba(231, 82, 107);
+    background-image: url('./bg-intro-mobile.png');
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+#maindiv{
+    display: block;
+padding: 60px 35px;
+justify-content: center;
+text-align: center;
+
+color: white;
+height: 100%;
+
+}
+#div1 h1{
+    font-weight: bolder;
+    
+
+}
+
+#div1 p{
+    margin-top: 20px;
+    line-height:30px ;
+font-size: 17px;
+}
+input:focus{
+    border-color: rgba(255, 0, 0, 0.9);
+ }
+ .firstname{
+    display: none;
+    color: red;
+ }
+ #firstnamediv:focus-within .firstname{
+    display: block;
+ }
+ 
+ .lastname{
+    display: none;
+    color: red;
+ }
+ #lastnamediv:focus-within .lastname{
+    display: block;
+ }
+ .email{
+    display: none;
+    color: red;
+ }
+ #emailid:focus-within .email{
+    display: block;
+ }
+ .pwd{
+    display: none;
+    color: red;
+ }
+ #pwdid:focus-within .pwd{
+    display: block;
+ }
+ button:hover{
+    background-color: #44b88d;
+ }
+#div2p{
+    background-color: rgb(128, 58, 160);
+    color: white;
+    border-radius: 10px;
+    padding: 16px 35px;
+    font-size: 18px;
+    line-height: 33px;
+    margin-top: 40px;
+    box-shadow: 0px 9px 1px rgba(34, 33, 33, 0.2);
+}
+#div2p p strong{
+    font-size: 20px;
+}
+#div22{
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 9px 1px rgba(34, 33, 33, 0.2);
+
+}
+input[type=text], input[type=password], input[type=email] {
+   width: 100%;
+   margin-bottom: 15px;
+   padding: 14px;
+   border-radius: 10px;
+   border-color: rgba(10, 7, 7, 0.3);
+  font-size: 15px;
+  font-weight: 600;
+  outline: none;
+  
+  }
+  button {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.4);
+    background-color: #04aa6d;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 18px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  #div22 p{
+      font-size: 15px;
+      margin-top: 15px;
+      color: rgba(0, 0, 0, 0.5);
+  }
+  #div22 p span{
+      color: rgb(199, 13, 13);
+      font-weight: 600;
+  }
+  @media screen and (min-width:555px){
+      #maindiv{
+          max-width: 555px;
+      }
+  }
+  
+  
+
+  @media screen and (min-width:1000px) {
+     
+#maindiv{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    height: 100vh;
+}
+#div1{
+    text-align: left;
+    padding: 70px;
+}
+
+#div1 h1{
+    font-size: 40px;
+    padding-right: 25px;
+}
+#div2{
+    width: 100%;
+}
+#div2p{
+    line-height: 20px;
+}
+  }
