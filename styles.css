@@ -2,9 +2,10 @@
     padding: 0; margin: 0; box-sizing: border-box;
 }
 body{
-    font-family: sans-serif;
+font-family:'Poppins', sans-serif;
     background-color: rgba(231, 82, 107);
     background-image: url('./bg-intro-mobile.png');
+    font-size: 16px;
 }
 main{
     display: flex;
@@ -35,8 +36,9 @@ input:focus{
     border-color: rgba(255, 0, 0, 0.9);
  }
  .firstname{
+    text-align: right;
     display: none;
-    color: red;
+    color: hsl(0, 100%, 74%);
  }
  #firstnamediv:focus-within .firstname{
     display: block;
@@ -44,28 +46,29 @@ input:focus{
  
  .lastname{
     display: none;
-    color: red;
+    color: hsl(0, 100%, 74%);
+    text-align: right;
  }
  #lastnamediv:focus-within .lastname{
     display: block;
  }
  .email{
     display: none;
-    color: red;
+    color: hsl(0, 100%, 74%);
+    text-align: right;
  }
  #emailid:focus-within .email{
     display: block;
  }
  .pwd{
     display: none;
-    color: red;
+    color: hsl(0, 100%, 74%);
+    text-align: right;
  }
  #pwdid:focus-within .pwd{
     display: block;
  }
- button:hover{
-    background-color: #44b88d;
- }
+ 
 #div2p{
     background-color: rgb(128, 58, 160);
     color: white;
@@ -100,7 +103,7 @@ input[type=text], input[type=password], input[type=email] {
   }
   button {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.4);
-    background-color: #04aa6d;
+    background-color: hsl(154, 59%, 51%);
     color: white;
     border-radius: 10px;
     font-size: 16px;
@@ -111,6 +114,9 @@ input[type=text], input[type=password], input[type=email] {
     width: 100%;
     opacity: 0.9;
   }
+  button:hover{
+    background-color: rgb(129, 218, 185);
+ }
   #div22 p{
       font-size: 15px;
       margin-top: 15px;
@@ -120,7 +126,7 @@ input[type=text], input[type=password], input[type=email] {
       color: rgb(199, 13, 13);
       font-weight: 600;
   }
-  @media screen and (min-width:555px){
+  @media screen and (min-width:375px){
       #maindiv{
           max-width: 555px;
       }
